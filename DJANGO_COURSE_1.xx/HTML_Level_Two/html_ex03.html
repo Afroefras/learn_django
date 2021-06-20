@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML exercise 03</title>
+    </head>
+    <body>
+
+        <form action="https://www.google.com" method="get">
+
+            <h1>Sign up</h1>
+            <p>All text fields are required!</p>
+
+            <label for="first_name">Name: </label>
+            <input id="first_name" type='text' placeholder="First Name" required>
+            <label>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </label>
+
+            <p></p>
+            <label for="email">Email: </label>
+            <input type="email" value="user@email.com" required>
+            <label>Password: 
+                <input type="password" name="email" placeholder="Password" required>
+            </label>
+
+            <p>Are you over 18 years old?</p>
+            <label for="not_over">Nope</label>
+            <input type="radio" name="over_18" id="not_over" value="no" required>
+            <label for="over">Yes</label>
+            <input type="radio" name="over_18" id="over" value="yes">
+
+            <p>Credit or debit card?</p>
+            <select>
+                <option>Credit card</option>
+                <option>Debit card</option>
+            </select>
+            
+            <input type="submit" value="Sign up">
+
+        </form>
+
+    </body>
+</html>
