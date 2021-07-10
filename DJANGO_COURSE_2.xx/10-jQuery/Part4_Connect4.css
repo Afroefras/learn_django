@@ -1,0 +1,35 @@
+body{
+    background: #2e2d2d;
+}
+
+.center {
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td{
+    padding:2px;
+    text-align:center;
+}
+
+.circle{
+    background-color:rgba(0,0,0,0);
+    display:block;
+    height:80px;
+    width:80px;
+    border-radius:50%;
+    border:2px solid rgb(218, 218, 218);
+    margin:auto;   
+}
+
+.turnBlue{
+    color:white;
+    background: rgba(50, 50, 161, 0.836);
+  }
+.turnRed{
+    color:white;
+    background: rgba(177, 57, 57, 0.705);
+}
