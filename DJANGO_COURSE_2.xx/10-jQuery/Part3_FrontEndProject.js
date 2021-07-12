@@ -9,6 +9,7 @@ var player2Color = 'rgb(237, 45, 73)';
 var game_on = true;
 var table = $('table tr');
 
+
 // http://stackoverflow.com/questions/6139407/getting-td-by-index-with-jquery
 function reportWin(rowNum,colNum) {
   console.log("You won starting at this row,col");
