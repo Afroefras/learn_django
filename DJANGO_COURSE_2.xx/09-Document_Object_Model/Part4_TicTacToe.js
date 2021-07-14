@@ -24,7 +24,11 @@ function horizontalWinCheck(){
         a = returnMarker(i,0)
         b = returnMarker(i,1)
         c = returnMarker(i,2)
-        return checkLine(a,b,c)
+        if (checkLine(a,b,c)){
+            return true
+        }else{
+            continue
+        }
     }
 };
 
@@ -33,7 +37,11 @@ function verticalWinCheck(){
         a = returnMarker(0,i)
         b = returnMarker(1,i)
         c = returnMarker(2,i)
-        return checkLine(a,b,c)
+        if (checkLine(a,b,c)){
+            return true
+        }else{
+            continue
+        }
     }
 };
 
@@ -48,8 +56,13 @@ function diagonalWinCheck(){
 
 // Game End
 function gameEnd(winningPlayer) {
-    $('.board').fadeOut('fast');
-    $('h2').text(winningPlayer+" has won! Refresh your browser to play again!").css("fontSize", "50px")
+    winnerMsg = document.querySelector('h2')
+    winnerMsg.textContent = winningPlayer+" has won! Refresh your browser to play again!";
+    winnerMsg.style.fontSize = 'xx-large'
+    document.querySelector('.board').remove()
+    document.querySelector('.next').remove()
+    document.querySelector('.start').textContent = 'Restart'
+    return winningPlayer
 }
 
 
