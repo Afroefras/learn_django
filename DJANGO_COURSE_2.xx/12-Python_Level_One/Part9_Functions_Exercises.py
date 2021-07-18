@@ -21,7 +21,10 @@
 # arrayCheck([1, 1, 2, 1, 2, 3]) → True
 
 def arrayCheck(nums):
-    # CODE GOES HERE
+  for i in range(len(nums)-2):
+    if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
+      return True
+  return False
 
 
 #####################
@@ -37,8 +40,8 @@ def arrayCheck(nums):
 # stringBits('Hi') → 'H'
 # stringBits('Heeololeo') → 'Hello'
 
-def stringBits(str):
-  # CODE GOES HERE
+def stringBits(mystr):
+  mystr[::2]
 
 
 #####################
@@ -59,7 +62,8 @@ def stringBits(str):
 
 
 def end_other(a, b):
-  # CODE GOES HERE
+  min_length = min(len(a),len(b))
+  return a[:min_length].lower() == b[:min_length].lower()
 
 #####################
 ## -- PROBLEM 4 -- ##
@@ -72,8 +76,8 @@ def end_other(a, b):
 # doubleChar('AAbb') → 'AAAAbbbb'
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-def doubleChar(str):
-  # CODE GOES HERE
+def doubleChar(mystr):
+  return ''.join([x*2 for x in mystr])
 
 
 #####################

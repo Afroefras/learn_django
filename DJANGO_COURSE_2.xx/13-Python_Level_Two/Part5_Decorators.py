@@ -92,7 +92,7 @@ greet()
 # Functions within functions
 ######################################
 
-# Great! So we've seen how we can treat functions as objects, now lets see how
+# Great! So we've seen how we can treat functions as objects, now let's see how
 # we can define functions inside of other functions:
 
 def hello(name='Jose'):
