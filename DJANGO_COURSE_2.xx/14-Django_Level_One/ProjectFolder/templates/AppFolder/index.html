@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 1.0</title>
+        <link rel="stylesheet" href="{% static 'AppFolder/styles/index.css' %}">
+    </head>
+    <body>
+        <h1>This is a simple heading</h1>
+        {{insert_text}}
+        <br>
+        <img src="{% static 'AppFolder/images/einaudi.jpeg' %}" alt="Uh oh, something is missing here!">
+        <p>This one above, is an inserted image</p>
+    </body>
+</html>
