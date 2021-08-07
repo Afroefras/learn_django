@@ -1,0 +1,12 @@
+h1{
+    color: red;
+}
+
+body{
+    background-color: black;
+}
+
+table, td{
+    border: 0.5px solid whitesmoke;
+    color: whitesmoke;
+}
