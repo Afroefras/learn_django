@@ -1,0 +1,28 @@
+.heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: skyblue;
+}
+
+#students th{
+    border: skyblue 0.1em solid;
+}
+
+#students{
+    border: whitesmoke 0.2em dotted;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
+
+h1{
+    color: rgb(25, 76, 124);
+}
