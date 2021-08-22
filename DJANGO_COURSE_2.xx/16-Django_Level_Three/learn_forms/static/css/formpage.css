@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(41, 41, 41);
+    color: rgb(214, 214, 214);
+    font-family: Helvetica;
+}
+
+h1{
+    color: rgb(99, 99, 221);
+}
+
+.submit_btn{
+    font-size: large;
+    padding: 1%;
+    border-radius: 12px;
+    background-color: rgb(58, 151, 151);
+    color: rgb(236, 236, 236);
+    font-family: Helvetica;
+    transition-duration: 0.4s;
+}
+
+.submit_btn:hover {
+    background-color: rgb(44, 112, 112);
+    color: rgb(236, 236, 236);
+  }
