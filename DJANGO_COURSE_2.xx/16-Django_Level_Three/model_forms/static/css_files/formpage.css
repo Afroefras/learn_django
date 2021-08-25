@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(43, 42, 42);
+    color: rgb(224, 224, 224);
+    font-family: Courier;
+}
+
+h1{
+    color: rgb(189, 66, 66);
+}
+
+form{
+    text-align: center;
+}
+
+#submit_btn{
+    font-size: 1em;
+    padding: 1.6%;
+    border-radius: 12px;
+    background-color: seagreen;
+    color: rgb(245, 245, 245);
+    transition-duration: 700ms;
+    text-align: center;
+}
+
+#submit_btn:hover{
+    background-color: rgb(34, 102, 64);
+}
