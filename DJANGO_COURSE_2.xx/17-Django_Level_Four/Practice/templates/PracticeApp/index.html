@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'PracticeApp/base.html' %}
+{% load static %}
+    {% block style %}
+        <link rel="stylesheet" href="{% static 'css_files/index.css' %}">
+    {% endblock %}
+
+    {% block body %}
+        {% load extra_tags %}
+        <h2>{{ insert_h2|upper }}</h2>
+        <h2>{{ insert_h2|change:'changed' }}</h2>
+        <p>{{ insert_p|add:'22' }}</p>
+        <br><br>
+        <a href="{% url 'go_to:kenobi' %}">Click here to start!</a>
+    {% endblock %}

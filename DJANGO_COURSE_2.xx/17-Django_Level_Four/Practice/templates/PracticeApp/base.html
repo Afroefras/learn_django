@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SW</title>
+        {% block style %}
+        {% endblock %}
+    </head>
+    <body>
+        <h1>Practice</h1>
+        <a href="{% url 'index' %}"><strong>Home</strong></a>
+        <br>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

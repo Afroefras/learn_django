@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'PracticeApp/base.html' %}
+{% load static %}
+    {% block style %}
+        <link rel="stylesheet" href="{% static 'css_files/meme.css' %}">
+    {% endblock %}
+
+    {% block body %}
+        <a href="{% url 'go_to:kenobi' %}">
+            <img src="{% static 'images/general.gif' %}" alt="General 404">
+        </a>
+    {% endblock %}
