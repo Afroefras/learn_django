@@ -11,6 +11,11 @@
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'admin:index' %}">Admin</a></li>
             <li><a href="{% url 'NewApp:register' %}">Register</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'user_logout' %}">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'NewApp:user_login' %}">Login</a></li>
+            {% endif %}
         </ul>
         {% block body %}
         {% endblock %}
