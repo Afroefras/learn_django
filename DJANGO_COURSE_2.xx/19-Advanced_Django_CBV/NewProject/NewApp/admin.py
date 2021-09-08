@@ -1,3 +1,5 @@
 from django.contrib import admin
+from NewApp.models import School, Student
 
-# Register your models here.
+for model in [School, Student]:
+    admin.site.register(model)

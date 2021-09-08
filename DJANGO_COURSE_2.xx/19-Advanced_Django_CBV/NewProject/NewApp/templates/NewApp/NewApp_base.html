@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="{% static 'css_files/base.css' %}">
     </head>
     <body>
-        <ol>
+        <ul>
             <li><a href="{% url 'NewApp:list' %}">School</a></li>
             <li><a href="{% url 'admin:index' %}">Admin</a></li>
             <li><a href="#">Empty</a></li>
-        </ol>
-        {% block block_body%}
+        </ul>
+        {% block block_body %}
         {% endblock %}
     </body>
 </html>

@@ -1,6 +1,11 @@
+a{
+    color: rgb(48, 193, 196);
+}
+
 body{
     background-color: rgb(36, 35, 35);
     color: rgb(224, 224, 224);
+    font-family: Helvetica;
 }
 
 h1{
